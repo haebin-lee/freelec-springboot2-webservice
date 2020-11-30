@@ -1,4 +1,4 @@
-package com.lucy.book.springboot.web;
+package com.lucy.book.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

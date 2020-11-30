@@ -1,6 +1,6 @@
-package com.lucy.book.springboot.web.web;
+package com.lucy.book.springboot.web;
 
-import com.lucy.book.springboot.web.web.dto.HelloResponseDto;
+import com.lucy.book.springboot.web.dto.HelloResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
