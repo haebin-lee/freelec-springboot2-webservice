@@ -11,6 +11,7 @@ cache:
   directories:
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
+
 script: "./gradlew clean build"
 
 before_deploy:
@@ -38,7 +39,7 @@ deploy:
   - provider: codedeploy
     access_key_id: $AWS_ACCESS_KEY #Travis repo settings에 설정된 값
     secret_access_key: $AWS_SECRET_KEY #Travis repo settings에 설정된 값
-    bucket: freelec-springboot2-s3 # s3 버킷
+    bucket: freelec-springboot2-s3
     key: freelec-springboot2-webservice.zip # 빌드파일을 압축해서 전달
     bundle_type: zip # 압축확장자
     application: freelec-springboot2-webservice # 웹 콘솔에서 등록한 CodeDeploy 애플리케이션
@@ -51,4 +52,3 @@ notifications:
   email:
     recipients:
       - hblee8080@gmail.com
-
